@@ -1,6 +1,6 @@
-import { verifyWebhook } from "@clerk/backend/webhooks";
-import { WebhookEvent } from "@clerk/backend";
 import { prisma } from "@/lib/prisma";
+import { WebhookEvent } from "@clerk/backend";
+import { verifyWebhook } from "@clerk/backend/webhooks";
 
 export async function POST(request: Request) {
   try {
